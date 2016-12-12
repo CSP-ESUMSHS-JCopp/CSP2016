@@ -7,8 +7,9 @@
 ####
 
 team_name = 'The Pooper' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+strategy_name = 'Leech'
+strategy_description = 'Start committing but once opponent betrays, betray next round, and commit the next, repeat until accomplished 5 commit, and defect until opponent deflect, repeat. '
+
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
