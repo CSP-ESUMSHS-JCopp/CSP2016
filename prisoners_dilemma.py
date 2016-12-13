@@ -125,7 +125,7 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     '''
     
     RELEASE = 0 # (R, "reward" in literature) when both players collude
-    TREAT = 100 # (T, "temptation" in literature) when you betray your partner
+    TREAT = 250 # (T, "temptation" in literature) when you betray your partner
     SEVERE_PUNISHMENT = -250 # (S, "sucker" in literature) when your partner betrays you
     PUNISHMENT = -500 # (P) when both players betray each other
     
