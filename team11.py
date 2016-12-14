@@ -19,11 +19,15 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'c' or 'b'. 
     '''
     betrayal = 0
-    return 'b'
-    if their_history[0] == 'c':
-        betrayal = betrayal + 1
+    if their_history[-1] == 'b':
+        return 'b'
+        betrayal = 0
     else:
-        return 'c'
+        return 'a'
+        betrayal = betrayal + 1
+    while betrayal >= 5:
+        return 'b'
+        
         
         
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
