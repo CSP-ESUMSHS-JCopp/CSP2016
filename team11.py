@@ -18,14 +18,17 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
-    betrayal = 0
+    
+    if len(my_history)==0:
+        return 'c'
+        betrayal = 0
     if their_history[-1] == 'b':
         return 'b'
         betrayal = 0
     else:
-        return 'a'
+        return 'c'
         betrayal = betrayal + 1
-    while betrayal >= 5:
+    if betrayal >= 5:
         return 'b'
         
         
